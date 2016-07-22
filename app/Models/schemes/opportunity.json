@@ -1,0 +1,44 @@
+{
+	"basic" :
+	{
+		"id": "getId",
+		"status": "getStatus",
+		"location": "getLocation",
+		"title": "getTitle",
+        "description": "getDescription",
+        "requirements": "getRequirements",
+        "skills": "getSkills",
+        "nice_to_have": "getNiceToHave",
+        "perks": "getPerks",
+        "created_by": "getCreatedBy",
+        "created_at": "getCreatedAt"
+	},
+	"full" :
+	{
+		"id": "getId",
+		"status": "getStatus",
+		"location": "getLocation",
+		"title": "getTitle",
+        "description": "getDescription",
+        "requirements": "getRequirements",
+        "skills": "getSkills",
+        "nice_to_have": "getNiceToHave",
+        "perks": "getPerks",
+        "created_by": "getCreatedBy",
+        "created_at": "getCreatedAt"
+	},
+	"set" : {
+        "protected": {
+	        "id": "setId",
+            "status": "setStatus",
+            "location": "setLocation",
+            "title": "setTitle",
+            "description": "setDescription",
+            "requirements": "setRequirements",
+            "skills": "setSkills",
+            "nice_to_have": "setNiceToHave",
+            "perks": "setPerks",
+            "created_by": "setCreatedBy"
+		}
+    }
+}

@@ -85,4 +85,7 @@ Route::group(['prefix' => '1', 'middleware' => 'oauth_bearer'], function($app)
 	$app->patch 	('users/{id}/password', 				'UserController@updatePassword');
  	$app->patch 	('accounts/{id}/users/{id2}/password', 	'UserController@updatePassword');
  	$app->resource	('accounts.users',						'UserController',			['except' => ['create', 'edit']]);
+
+	# Opportunities
+	$app->resource   ('opportunities', 						'OpportunityController');
 });
