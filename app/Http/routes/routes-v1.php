@@ -40,7 +40,7 @@
  * @SWG\Parameter(name="q", description="The search option, only simple string allowed", in="path", required=false, type="string")
  *
  * Schema definitions
- * @SWG\definition(definition="index_array", description="list Array of resources", type="array")
+ * @SWG\Definition(definition="index_array", description="list Array of resources", type="array")
  *
  */
 

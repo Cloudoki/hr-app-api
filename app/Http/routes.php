@@ -33,8 +33,9 @@ include "routes/routes-v1.php";
 /**
  *	Default redirect.
  */
+ /*
 Route::get('/', function()
 {
 	return redirect (config ('app.url', 'http://localhost'), 301);
-});
+});*/
 
