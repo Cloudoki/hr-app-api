@@ -21,7 +21,7 @@ Documentation for the framework can be found on the [Laravel website](http://lar
 
 ## Install API
 1. Download the git package
-1. Run composer install
+1. Run composer update --no-scripts
 1. Copy .env.example as .env and edit to your liking
 1. Point your vhost/nginx conf file to the public folder
 1. Profit.
