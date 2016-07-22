@@ -12,7 +12,8 @@ return array(
 	|
 	*/ 
 	
-	'invite_url' => 'http://api.cloudoki.com/oauth2/invitation',
-	'reset_url' =>  'http://api.cloudoki.com/oauth2/reset',
-	'privacy_url' => 'http://en.wikipedia.org/wiki/Privacy_policy'
+	'invite_url' => env('OAUTH_INVITE_URL'),
+	'reset_url' =>  env('OAUTH_RESET_URL'),
+	'privacy_url' => env('OAUTH_PRIVACY_URL'),
+	'redirect_url' => env('OAUTH_REDIRECT_URL')
 );
