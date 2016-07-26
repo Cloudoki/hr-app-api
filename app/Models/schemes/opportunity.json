@@ -29,7 +29,6 @@
 	},
 	"set" : {
         "protected": {
-	        "id": "setId",
             "status": "setStatus",
             "location": "setLocation",
             "title": "setTitle",

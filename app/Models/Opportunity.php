@@ -31,18 +31,6 @@ class Opportunity extends BaseModel
 		return $this->id;
 	}
 
-	/**
-	 * Set user name
-	 *
-	 * @param	string	$firstname
-	 */
-	public function setId ($id)
-	{
-		$this->id = $id;
-		
-		return $this;
-	}
-
     /**
 	 * Get user first name
 	 *
