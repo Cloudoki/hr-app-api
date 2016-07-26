@@ -10,8 +10,7 @@
         "skills": "getSkills",
         "nice_to_have": "getNiceToHave",
         "perks": "getPerks",
-        "created_by": "getCreatedBy",
-        "created_at": "getCreatedAt"
+        "created_by": "getCreatedBy"
 	},
 	"full" :
 	{
@@ -24,8 +23,7 @@
         "skills": "getSkills",
         "nice_to_have": "getNiceToHave",
         "perks": "getPerks",
-        "created_by": "getCreatedBy",
-        "created_at": "getCreatedAt"
+        "created_by": "getCreatedBy"
 	},
 	"set" : {
         "protected": {
