@@ -81,7 +81,7 @@ class OpportunityController extends BaseController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store($id = null)
     {
         $payload = $this->validation ([], self::$postRules);
 
@@ -95,6 +95,7 @@ class OpportunityController extends BaseController
 
 		# Return Account
 		return response()->json($opportunity->schema($payload->display));
+        
     }
 
     /**
