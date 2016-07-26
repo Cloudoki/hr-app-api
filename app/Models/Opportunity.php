@@ -160,7 +160,7 @@ class Opportunity extends BaseModel
 	 */
 	public function setSkills ($skills)
 	{
-		$this->sills = $skills;
+		$this->skills = $skills;
 		
 		return $this;
 	}
