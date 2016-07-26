@@ -216,7 +216,7 @@ class Opportunity extends BaseModel
 	 */
 	public function getCreatedBy ()
 	{
-		return $this->createdby;
+		return $this->created_by;
 	}
 
 	/**
