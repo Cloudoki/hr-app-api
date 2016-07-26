@@ -10,12 +10,14 @@ class Opportunity extends BaseModel
 {
     use SoftDeletes;
 	
-	/**
+	protected $table = 'opportunities';
+
+		/**
 	 * The model type.
 	 *
 	 * @const string
 	 */
-	const type = 'opportunities';
+	const type = 'opportunity';
 
     public function created_by() {
 		return $this->belongsTo('App\Models\User');
