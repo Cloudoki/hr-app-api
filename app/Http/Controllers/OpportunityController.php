@@ -144,12 +144,12 @@ class OpportunityController extends BaseController
     public function update($id)
     {
         # resources
-		$payload = $this->validation (['id'=> $id], self::$updateRules);
+		$payload = $this->validation ([], self::$updateRules);
 
 		# Validate
 		Guardian::check ();
 		
-		$opportunity = Opportunity::find($payload->id);
+		$opportunity = Opportunity::find($id);
 			
 		if (!$opportunity)
 			
@@ -170,19 +170,19 @@ class OpportunityController extends BaseController
      */
     public function destroy($id)
     {
-        $payload = $this->validation (['id'=> $id], self::$updateRules);
+        $payload = $this->validation (['id'=> $id], self::$getRules);
 		
 		# Validate
 		Guardian::check ();
 		
-		$opportunity = Opportunity::find($payload->id);
+		$opportunity = Opportunity::find($id);
 			
 		if (!$opportunity)
 			
 			throw new ModelNotFoundException();
 		
 		# Soft Delete
-		$opportunity->destroy((int) $payload->id);
+		$opportunity->destroy((int) $id);
 
 		return response()->json(true);
     }
