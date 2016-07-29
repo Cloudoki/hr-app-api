@@ -144,12 +144,12 @@ class OpportunityController extends BaseController
     public function update($id)
     {
         # resources
-		$payload = $this->validation ([], self::$updateRules);
+		$payload = $this->validation (['id'=> $id], self::$updateRules);
 
 		# Validate
 		Guardian::check ();
 		
-		$opportunity = Opportunity::find($id);
+		$opportunity = Opportunity::find($payload->id);
 			
 		if (!$opportunity)
 			
@@ -170,12 +170,12 @@ class OpportunityController extends BaseController
      */
     public function destroy($id)
     {
-        $payload = $this->validation ([], self::$updateRules);
+        $payload = $this->validation (['id'=> $id], self::$updateRules);
 		
 		# Validate
 		Guardian::check ();
 		
-		$opportunity = Opportunity::find($id);
+		$opportunity = Opportunity::find($payload->id);
 			
 		if (!$opportunity)
 			
