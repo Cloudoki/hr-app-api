@@ -28,7 +28,7 @@ return [
     |
     */
 
-    'host' => env('MAIL_HOST', 'smtp.mailgun.org'),
+    'host' => env('MAIL_HOST', 'smtp.sendgrid.net'),
 
     /*
     |--------------------------------------------------------------------------
@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'username' => env('MAIL_USERNAME'),
+    'username' => 'apikey',//env('MAIL_USERNAME'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'password' => env('MAIL_PASSWORD'),
+    'password' => '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',//env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
