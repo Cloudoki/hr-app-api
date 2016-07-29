@@ -65,6 +65,8 @@ Route::group(['prefix' => '1'], function($app)
 	$app->get('ping', 'ApiController@ping');
 	$app->get('icds', 'ApiController@icds');
 	$app->get('mail', 'ApiController@mail');
+
+	$app->post('testmail', 						'OpportunityController@testMail');
 });
 
 

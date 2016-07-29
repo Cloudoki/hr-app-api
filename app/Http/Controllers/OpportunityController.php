@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
+use Mail;
 
 use App\Http\Requests;
 use Cloudoki\Guardian\Guardian;
@@ -185,5 +186,13 @@ class OpportunityController extends BaseController
 		$opportunity->destroy((int) $id);
 
 		return response()->json(true);
+    }
+
+    public function testMail(){
+        $data = [];
+        Mail::raw('Text to e-mail', function($message)
+        {
+            $message->to('tiago@cloudoki.com', 'Jane Doe')->subject('This is a demo!');
+        });
     }
 }

@@ -80,7 +80,7 @@ return [
     |
     */
 
-    'username' => 'apikey',//env('MAIL_USERNAME'),
+    'username' => env('MAIL_USERNAME'),
 
     /*
     |--------------------------------------------------------------------------
@@ -93,7 +93,7 @@ return [
     |
     */
 
-    'password' => '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',//env('MAIL_PASSWORD'),
+    'password' => env('MAIL_PASSWORD'),
 
     /*
     |--------------------------------------------------------------------------
