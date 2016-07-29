@@ -170,7 +170,7 @@ class OpportunityController extends BaseController
      */
     public function destroy($id)
     {
-        $payload = $this->validation (['id'=>  $id2?: $id], self::$updateRules);
+        $payload = $this->validation ([], self::$updateRules);
 		
 		# Validate
 		Guardian::check ();
