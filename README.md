@@ -1,3 +1,7 @@
+# HR APP
+This app is designed to centralize the process of requiring tech savvy resources from external consulting companies and other parties. 
+
+# WHAT WE USE:
 # FOLDED Layer RESTful API
 The Layer API services the Layer backend and Layer Applications, in a scalable and Task Queue balanced matter.
 The Layer API is built on top of Laravel 5.
