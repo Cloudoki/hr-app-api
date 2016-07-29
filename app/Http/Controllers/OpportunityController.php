@@ -114,7 +114,7 @@ class OpportunityController extends BaseController
 		
 		$opportunity =	Opportunity::find($payload->id);
 			
-		if (!$vacancy)
+		if (!$opportunity)
 			
 			throw new ModelNotFoundException();
 		
@@ -151,7 +151,7 @@ class OpportunityController extends BaseController
 		
 		$opportunity = Opportunity::find($id);
 			
-		if (!$vacancy)
+		if (!$opportunity)
 			
 			throw new ModelNotFoundException();
 		
@@ -170,6 +170,20 @@ class OpportunityController extends BaseController
      */
     public function destroy($id)
     {
-        //
+        $payload = $this->validation (['id'=>  $id2?: $id], self::$updateRules);
+		
+		# Validate
+		Guardian::check ();
+		
+		$opportunity = Opportunity::find($id);
+			
+		if (!$opportunity)
+			
+			throw new ModelNotFoundException();
+		
+		# Soft Delete
+		$opportunity->destroy((int) $payload->id);
+
+		return response()->json(true);
     }
 }
