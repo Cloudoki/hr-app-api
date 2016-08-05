@@ -85,9 +85,9 @@ class OpportunityController extends BaseController
         	# Validate
 		Guardian::check ();
 		
-        $payload = $this->validation ( $opportunity_id? ['id'=> $opportunity_id]: [], $opportunity_id? self::$getCandidateRules: []);
+        $payload = $this->validation ( $opportunity_id? ['opportunity_id'=> $opportunity_id]: [], $opportunity_id? self::$getCandidateRules: []);
 		
-        $list = OpportunityCandidate::where('opportunity_id', $payload->id)->orderBy('id')->get();
+        $list = OpportunityCandidate::where('opportunity_id', $payload->opportunity_id)->orderBy('id')->get();
 		
 		# return all (account) users
 		return response()->json ($list->schema($payload->display));
