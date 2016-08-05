@@ -23,6 +23,11 @@ class OpportunityController extends BaseController
         'id'    =>  'required|integer'
     ];
 
+    protected static $getCandidateRules =
+    [
+        'opportunity_id'    =>  'required|integer'
+    ];
+
     protected static $updateRules =
     [
 		"status" => "",
@@ -75,6 +80,19 @@ class OpportunityController extends BaseController
 		return response()->json ($list->schema($payload->display));
     }
 
+    public function indexCandidates($opportunity_id = null)
+    {
+        	# Validate
+		Guardian::check ();
+		
+        $payload = $this->validation ( $opportunity_id? ['id'=> $opportunity_id]: [], $opportunity_id? self::$getCandidateRules: []);
+		
+        $list = OpportunityCandidate::where('opportunity_id', $payload->id)->orderBy('id')->get();
+		
+		# return all (account) users
+		return response()->json ($list->schema($payload->display));
+    }
+
     /**
      * Show the form for creating a new resource.
      *
@@ -107,6 +125,8 @@ class OpportunityController extends BaseController
 		return response()->json($opportunity->schema($payload->display));
         
     }
+
+
 
     public function storeCandidate($id = null)
     {
