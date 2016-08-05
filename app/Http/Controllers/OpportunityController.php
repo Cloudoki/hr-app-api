@@ -108,7 +108,7 @@ class OpportunityController extends BaseController
         
     }
 
-    public function storeCandidate()
+    public function storeCandidate($id = null)
     {
         $payload = $this->validation ([], self::$candidatePostRules);
 
