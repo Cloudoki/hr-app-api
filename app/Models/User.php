@@ -18,25 +18,5 @@ use Cloudoki\OaStack\Models\User as OaUser;
  */
 class User extends OaUser
 {
-	/**
-	 * Get user profile
-	 *
-	 * @return	integer
-	 */
-	public function getProfile ()
-	{
-		return $this->profile;
-	}
-
-	/**
-	 * Set user profile
-	 *
-	 * @param	integer	$profile
-	 */
-	public function setProfile ($profile)
-	{
-		$this->profile = $profile;
-		
-		return $this;
-	}
+	
 }
