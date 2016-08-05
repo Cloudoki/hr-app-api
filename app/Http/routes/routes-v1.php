@@ -91,5 +91,5 @@ Route::group(['prefix' => '1', 'middleware' => 'oauth_bearer'], function($app)
 	# Opportunities
 	$app->resource  ('opportunities', 						'OpportunityController');
 	$app->post 		('opportunities/candidates', 			'OpportunityController@storeCandidate');
-	$app->get 		('opportunities/candidates', 			'OpportunityController@indexCandidates');
+	$app->get 		('opportunities/{opportunities}/candidates', 		'OpportunityController@indexCandidates');
 });
