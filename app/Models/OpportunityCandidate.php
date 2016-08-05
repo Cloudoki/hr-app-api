@@ -88,7 +88,7 @@ class OpportunityCandidate extends BaseModel
 	 */
 	public function getCv ()
 	{
-		return $this->message;
+		return $this->cv;
 	}
 
 	/**
