@@ -49,6 +49,14 @@ class OpportunityController extends BaseController
         "created_by" => "required"
     ];
 
+    protected static $candidatePostRules =
+    [
+        "opportunity_id" => "required",
+        "message"=> "required",
+        "cv" => "required",
+        "created_by" => "required"
+    ];
+
     /**
      * Display a listing of the resource.
      *
@@ -102,7 +110,7 @@ class OpportunityController extends BaseController
 
     public function storeCandidate()
     {
-        $payload = $this->validation ([], self::$postRules);
+        $payload = $this->validation ([], self::$candidatePostRules);
 
 		# Validate
 		Guardian::check ($id? (int) $id: null);
