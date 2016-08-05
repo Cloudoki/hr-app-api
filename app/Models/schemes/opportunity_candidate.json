@@ -1,0 +1,26 @@
+{
+	"basic" :
+	{
+		"id": "getId",
+        "opportunity_id": "getOpportunity",
+        "message": "getMessage",
+        "cv": "getCv",
+        "created_by": "getCreatedBy"
+	},
+	"full" :
+	{
+		"id": "getId",
+        "opportunity_id": "getOpportunity",
+        "message": "getMessage",
+        "cv": "getCv",
+        "created_by": "getCreatedBy"
+	},
+	"set" : {
+        "protected": {
+            "opportunity_id": "setOpportunity",
+            "message": "setMessage",
+            "cv": "setCv",
+            "created_by": "setCreatedBy"
+		}
+    }
+}

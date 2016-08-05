@@ -89,5 +89,6 @@ Route::group(['prefix' => '1', 'middleware' => 'oauth_bearer'], function($app)
  	$app->resource	('accounts.users',						'UserController',			['except' => ['create', 'edit']]);
 
 	# Opportunities
-	$app->resource   ('opportunities', 						'OpportunityController');
+	$app->resource  ('opportunities', 						'OpportunityController');
+	$app->post 		('opportunities/candidates', 			'OpportunityController@storeCandidate');
 });

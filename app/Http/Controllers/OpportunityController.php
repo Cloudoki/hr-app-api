@@ -8,6 +8,7 @@ use Mail;
 use App\Http\Requests;
 use Cloudoki\Guardian\Guardian;
 use App\Models\Opportunity;
+use App\Models\OpportunityCandidate;
 
 class OpportunityController extends BaseController
 {
@@ -97,6 +98,22 @@ class OpportunityController extends BaseController
 		# Return Account
 		return response()->json($opportunity->schema($payload->display));
         
+    }
+
+    public function storeCandidate()
+    {
+        $payload = $this->validation ([], self::$postRules);
+
+		# Validate
+		Guardian::check ($id? (int) $id: null);
+		
+		# Save input
+		$opportunity_candidate = new OpportunityCandidate;
+		$opportunity_candidate->schemaUpdate((array) $payload);
+		
+
+		# Return Account
+		return response()->json($opportunity_candidate->schema($payload->display));
     }
 
     /**
