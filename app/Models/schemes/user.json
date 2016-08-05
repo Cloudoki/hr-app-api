@@ -13,7 +13,8 @@
 		"firstname": "getFirstName",
 		"lastname": "getLastName",
 		"avatar": "getAvatar",
-		"accounts": "getAccounts:id"
+		"accounts": "getAccounts:id",
+		"profile": "getProfile"
 	},
 	"set" : {
         "protected": {
@@ -21,7 +22,8 @@
 	        "firstname" : "setFirstName",
 		    "lastname" : "setLastName",
 		    "avatar": "setAvatar",
-		    "password": "setPassword"
+		    "password": "setPassword",
+			"profile": "setProfile"
 		}
     }
 }
