@@ -22,7 +22,7 @@ class OastackCreateUsersTable extends Migration {
 				$table->string ('lastname', 32);
 				$table->string ('password', 64)->nullable ();
 				$table->string ('avatar', 80)->nullable ();
-				$table->integer('profile', 11)->nullable()->default(1);
+				$table->integer('profile')->nullable()->default(1);
 
 				$table->softDeletes ();
 				$table->timestamps ();

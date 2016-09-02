@@ -10,6 +10,8 @@
         "skills": "getSkills",
         "nice_to_have": "getNiceToHave",
         "perks": "getPerks",
+        "created_at": "getCreatedAt",
+        "updated_at": "getCreatedAt",
         "created_by": "getCreatedBy"
 	},
 	"full" :
@@ -23,6 +25,8 @@
         "skills": "getSkills",
         "nice_to_have": "getNiceToHave",
         "perks": "getPerks",
+        "created_at": "getCreatedAt",
+        "updated_at": "getUpdatedAt",
         "created_by": "getCreatedBy"
 	},
 	"set" : {

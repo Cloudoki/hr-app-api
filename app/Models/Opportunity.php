@@ -230,4 +230,24 @@ class Opportunity extends BaseModel
 		
 		return $this;
 	}
+
+	 /**
+	 * Get created at
+	 *
+	 * @return	string
+	 */
+	public function getCreatedAt ()
+	{
+		return $this->created_at;
+	}
+
+	 /**
+	 * Get updated at
+	 *
+	 * @return	string
+	 */
+	public function getUpdatedAt ()
+	{
+		return $this->updated_at;
+	}
 }
