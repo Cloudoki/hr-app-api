@@ -234,7 +234,7 @@ class Opportunity extends BaseModel
 	 /**
 	 * Get created at
 	 *
-	 * @return	string
+	 * @return	date
 	 */
 	public function getCreatedAt ()
 	{
@@ -244,7 +244,7 @@ class Opportunity extends BaseModel
 	 /**
 	 * Get updated at
 	 *
-	 * @return	string
+	 * @return	date
 	 */
 	public function getUpdatedAt ()
 	{
