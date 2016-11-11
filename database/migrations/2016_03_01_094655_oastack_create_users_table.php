@@ -18,12 +18,13 @@ class OastackCreateUsersTable extends Migration {
 			{
 				$table->increments ('id');
 				$table->string('email', 32)->unique();
-				$table->string ('firstname', 32);
-				$table->string ('lastname', 32);
-				$table->string ('password', 64)->nullable ();
-				$table->string ('avatar', 80)->nullable ();
-				$table->integer('profile')->nullable()->default(1);
-
+				$table->string ('name', 32);
+				$table->string ('phone', 32);
+				$table->string ('linkedin')->nullable();
+				$table->string ('github')->nullable();
+				$table->string ('website')->nullable();
+				$table->string ('password', 64)->nullable();
+				$table->integer('profile')->nullable();
 				$table->softDeletes ();
 				$table->timestamps ();
 			});
