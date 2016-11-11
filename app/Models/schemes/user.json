@@ -3,15 +3,19 @@
 	{
 		"id": "getId",
 		"email": "getEmail",
-		"firstname": "getFirstname",
-		"lastname": "getLastname"
+		"name": "getName",
+		"phone": "getPhone",
+		"profile": "getProfile"
 	},
 	"full" :
 	{
 		"id": "getId",
 		"email": "getEmail",
-		"firstname": "getFirstName",
-		"lastname": "getLastName",
+		"name": "getName",
+		"phone": "getPhone",
+		"linkedin": "getLinkedin",
+		"github": "getGithub",
+		"website": "getWebsite", 
 		"avatar": "getAvatar",
 		"accounts": "getAccounts:id",
 		"profile": "getProfile"
@@ -19,8 +23,11 @@
 	"set" : {
         "protected": {
 	        "email" : "setEmail",
-	        "firstname" : "setFirstName",
-		    "lastname" : "setLastName",
+	        "name" : "setName",
+		    "phone" : "setPhone",
+			"linkedin": "setLinkedin",
+			"github": "setGithub",
+			"website": "setWebsite", 
 		    "avatar": "setAvatar",
 		    "password": "setPassword",
 			"profile": "setProfile"
